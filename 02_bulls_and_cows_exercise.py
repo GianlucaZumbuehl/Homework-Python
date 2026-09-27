@@ -23,6 +23,9 @@ while True:
     if len(guess) != 4:
         print("Jojojooooo, it should be four digits, try again")
         continue
+    if len(set(guess)) != 4:
+        print("no repeated digits, its to complex for my Python skills")
+        continue
 
     bulls = 0
     cows = 0
